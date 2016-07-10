@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Face Book RIAJU Burner",
+  "description": "This plugin enable you to burn RIAJU in Facebook.",
+  "version": "0.1",
+  "browser_action": {
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/*"
+      ],
+      "js": [
+        "jquery.js", "ccv.js", "face.js", "content_script.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "https://www.facebook.com/*",
+    "https://*.fbcdn.net/*"
+  ]
+}
